@@ -3,6 +3,9 @@ body{
     padding: 0px;
 }
 
+.c-card{
+    box-shadow: 0 6px 24px rgb(25 75 123 / 15%);
+}
 
 
 a{
@@ -15,6 +18,11 @@ a.simple{
 }
 
 /* CUSTOM COMPONENTS */
+
+.c-card{
+    border: 1px solid var(--neutral);
+}
+
 
 .c-navbar .menu li{
     padding-left: 32px;
@@ -57,4 +65,13 @@ h1,h2{
 
   .w-100{
     width: fit-content;
+  }
+
+
+
+  /*================================== Utilities */
+  @media (max-width:600px) {
+    .c-header-background{
+        height: 23vh;
+      }
   }
