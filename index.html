@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="coltrane.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bootstrap-grid.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Design @ Coppel (Coppel-Design.com)">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=" https://coppel-design.com/">
+    <meta property="og:image" content="./images/principal.png">
+    <meta property="og:description" content="El sitio donde podrás encontrar toda la información sobre los estandares de diseño en Coppel">
+    <meta property="og:site_name" content="Design @ Coppel">
     <title>Coppel Design </title>
   </head>
   <body class="background-bg">
-    <nav class="c-navbar fixed">
+    <nav class="c-navbar fixed animate__fadeInDown animate__animated">
       <div class="brand">
         <h4>Coppel Design</h4>
       </div>
@@ -31,11 +38,12 @@
           </div>
         </li>
         <li><a href="recursos.html">Recursos</a></li>
-        <li><a href="https://sites.google.com/bancoppel.com/m-com-organico" target="blank">Customer Experience</a></li>
+        <li><a href="tipografia.html">Tipografias</a></li>
+        <li><a href="https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio" target="blank">Customer Experience</a></li>
       </ul>
     </nav>
-    <div class="c-header-background background-bg b-center hv-50" style="background-image: url('images/principal.png'); background-size: contain;background-repeat: no-repeat;"></div>
-    <div class="custom" style="background-image: url(images/back1.png);     background-image: url(images/back1.png);background-size: contain;background-position: center;">
+    <div class="c-header-background background-bg b-center hv-50 animate__fadeIn animate__animated" style="background-image: url('images/principal.png'); background-size: contain;background-repeat: no-repeat;z-index:-10;position:relative;"></div>
+    <div class="custom" style="background-image: url(images/back1.png);background-image: url(images/back1.png);background-size: contain;background-position: center;">
       <div class="container-md"><br><br><br><br><br><br><br>
         <div class="text-center m-5">
           <div class="display">Brandign <br>Grupo Coppel </div>
@@ -110,7 +118,7 @@
             <div class="col-md-6" style="display: flex;justify-content: center;align-items: flex-start;flex-direction: column;">
               <div class="display">Customer Experience</div>
               <p>El manual de voz y tono fue creado para mantenerse de forma orgánica, incluyente y accesible, cónoce todo lo que encontramos en nuestra investigación con nuestros clientes.</p>
-              <button class="primary-button m-3" type="submit" onclick="window.open(&quot;https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio&quot;)">Conocer más</button>
+              <button class="primary-button m-3" type="submit" onclick="window.location.replace(&quot;https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio&quot;)">Conocer más</button>
             </div>
           </div>
         </div>
@@ -151,5 +159,14 @@
       </div>
     </div>
     <div class="caption text-center p-4"><a class="simple" href="#">Aviso de privacidad</a><br>Copyright© 2023 Coppel - Todos los derechos reservados.</div>
+    <!--  Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S060M0NFTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-S060M0NFTJ');
+    </script>
   </footer>
 </html>

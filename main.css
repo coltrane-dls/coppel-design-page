@@ -19,6 +19,7 @@ a.simple{
 
 /* CUSTOM COMPONENTS */
 
+
 .c-card{
     border: 1px solid var(--neutral);
 }
@@ -67,7 +68,7 @@ h1,h2{
     width: fit-content;
   }
 
-
+  
 
   /*================================== Utilities */
   @media (max-width:600px) {
