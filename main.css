@@ -76,3 +76,13 @@ h1,h2{
         height: 23vh;
       }
   }
+
+
+
+
+  /*================================== Customs */
+
+
+  .btn_fix_custom{
+    min-width: auto !important;
+  }
