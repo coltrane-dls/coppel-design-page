@@ -83,6 +83,14 @@ h1,h2{
 
   /*================================== Customs */
 
+  .c-card.item.horizontal .img-content{
+    width: 30%;
+    max-width: 200px;
+  }
+
+  .display{
+    font-weight: inherit !important;
+  }
 
   .btn_fix_custom{
     min-width: auto !important;
