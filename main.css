@@ -102,3 +102,7 @@ h1,h2{
   .btn_fix_custom{
     min-width: auto !important;
   }
+
+  .background_set{
+    background-color: var(--background-soft);
+  }
