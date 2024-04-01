@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 .c-card{
@@ -76,7 +77,9 @@ h1,h2{
     width: fit-content;
   }
 
-  
+  .text-right{
+    text-align: right;
+  }
 
   /*================================== Utilities */
   @media (max-width:600px) {
@@ -105,4 +108,46 @@ h1,h2{
 
   .background_set{
     background-color: var(--background-soft);
+  }
+
+  .secondary-button.bt-small{
+    padding: 8px 18px !important;
+    min-width: fit-content !important;
+    border: 0px solid white !important;
+  }
+
+  .alert.alert-warning{
+    border-color: var(--warning) !important;
+    border: 1px solid;
+    color: var(--warning);
+    background-color: var(--warning-bg);
+    
+  }
+
+  .alert-container{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+  
+    bottom: 0;
+  }
+
+  /* ====================================== Custom head */
+
+  .c-navbar .secondary-button, .c-navbar .primary-button{
+    padding: 8px 18px;
+    border:0 solid !important;
+    margin:0px !important;
+    min-width: fit-content;
+  }
+
+  .c-navbar,.c-navbar .menu{
+    align-items: center;
+  }
+
+  .c-navbar .menu li{
+    padding-left: 4px;
+    padding-right: 4px;
   }
