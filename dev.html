@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="coltrane.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Design @ Coppel (Coppel-Design.com)">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=" https://coppel-design.com/">
+    <meta property="og:image" content="./images/principal.png">
+    <meta property="og:description" content="El sitio donde podrás encontrar toda la información sobre los estandares de diseño en Coppel">
+    <meta property="og:site_name" content="Design @ Coppel">
+    <title>Coppel Design </title>
+  </head>
+  <body class="background-bg">
+    <div class="p-4 flex alert-container animate__fadeInUp animate__animated fix_alert">
+      <div class="c-alert-warning">
+        ⚠️
+         <span class="p-2">Para acceder a la mayoría de los recursos, necesitas un correo de Coppel o Bancoppel.<br>Para cualquier duda <a class="warning" href="mailto:design@coppel.com">da click aquí  </a>~ (Solo mails Coppel).  </span>
+      </div>
+    </div>
+    <nav class="c-navbar fixed animate__fadeInDown animate__animated">
+      <div class="brand">
+        <h4> <a href="index.html"> <img src="assets/icon.png" alt="">Coppel Design</a></h4>
+      </div>
+      <ul class="menu">
+        <li>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;index.html&quot;)">Inicio</button>
+        </li>
+        <li>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;design.html&quot;)">Designer</button>
+        </li>
+        <li>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;dev.html&quot;)">Devs</button>
+        </li>
+        <li>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.open(&quot;https://sites.google.com/coppel.com/coltranecontent/inicio&quot;)">Contenido</button>
+        </li>
+        <li>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.location.replace(&quot;./recursos.html&quot;)">Recursos</button>
+        </li>
+        <li>
+          <button class="secondary-button m-3 primary">Managers</button>
+        </li>
+        <li>
+          <button class="secondary-button m-3 primary" type="submit" onclick="window.open(&quot;https://sites.google.com/coppel.com/coltrane-education/inicio&quot;)">Tutoriales</button>
+        </li>
+        <li>·</li>
+        <li> </li>
+        <li>
+          <button class="primary-button m-3 primary" type="submit" onclick="window.open(&quot;https://forms.gle/ndeYvpVGYus8PESi6&quot;)">Contribuir al DLS</button>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-lg mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12">
+          <div class="custom_side">
+            <div class="c-card menu"><a href="#intro">Inicio</a>
+              <h5 class="mb-2 black">Foundations</h5><a href="#tokens">Tokens</a><a href="#tipo">Escala tipográfica</a>
+              <h5 class="mb-2 black">Librerías</h5><a href="#install">Instalación Coltrane CSS</a><br>
+              <hr>
+              <hr>
+              <h4 class="mb-2 black">Componentes</h4>
+              <div class="caption warning pb-2">⚠️ Estos componentes están construidos con <strong>Coltrane CSS, </strong>proximamente agregaremos otras librerías. </div>
+              <h5 class="m-0 black">Notificaciones</h5><a href="#alert">Alert</a><a href="#tooltip">Tooltip</a><br>
+              <h5 class="m-0 black">Navegación</h5><a href="#breadcrumb">Breadcrumb</a><a href="#footer">Footer</a><a href="#navbar">Navbar</a><a href="#stepper">Stepper</a><br>
+              <h5 class="m-0 black">Interacción</h5><a href="#button">Button</a><a href="#card">Card</a><a href="#inputs">Input</a><a href="#modal">Modal</a><a href="#selector">Selector</a><br>
+              <h5 class="m-0 black">Filtrado</h5><a href="#table">Table</a><a href="#tabs">Tabs</a><br>
+              <h5 class="m-0 black">Display</h5><a href="#avatar">Avatar</a><a href="#collapse">Collapse</a><a href="#list">List</a><br>
+              <h5 class="m-0 black">Sistemas adicionales</h5><a href="#column">Columnas</a><a href="#utils">Utilidades</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          <div class="c-card mb-4" id="intro">
+            <h1>¡Hola Dev 👋!</h1>
+            <p>En este espacio encontrarás instalables y otros paquetes que te ayudarán a construir experiencias para Coppel. Estamos trabajando arduamente para mejorar la calidad de los componentes y demás recursos. 
+              <div class="c-alert-info"><small>ℹ️ Los recursos de iOS, Android y Windows son iniciales, contienen tokens y otros recursos menores. Si deseas constribuir a estas librerías <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAhSrp8iwkq9Wwb4SnctwXCl_i2ntExXe0sCsqGvHDyLv9ow/viewform" target="_blank">da click aquí.</a></small></div><br>
+              <div class="small mt-4">Si tienes alguna duda, contáctanos a través de este <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAhSrp8iwkq9Wwb4SnctwXCl_i2ntExXe0sCsqGvHDyLv9ow/viewform" target="_blank">enlace. </a></div>
+            </p>
+          </div><br>
+          <hr>
+          <hr>
+          <hr><br>
+          <div class="container padding-initial" id="libs">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="c-card item">
+                  <div class="background-bg" style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/desvar.png');  background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+                  <div class="content p-4"><small>Coltrane</small>
+                    <h3 class="mt-1">Tokens</h3>
+                    <p>Los principios y elementos básicos, como colores, tipografías y espaciados, etc.</p>
+                    <div class="text-right pt-3">
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./dev.html#tokens&quot;)">Me interesa</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="mt-4">Librerías</h2>
+              <div class="col-md-4 mb-3">
+                <div class="c-card item">
+                  <div class="background-bg" style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/devs.png');  background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+                  <div class="content p-4"><small>Coltrane</small>
+                    <h3 class="mt-1">CSS</h3>
+                    <p>Librería con la capacidad de integrarse en cualquier desarrollo web.</p>
+                    <div class="text-center">
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.open(&quot;https://github.com/coltrane-dls/coltrane&quot;)">Repositorio</button>
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.location.replace(&quot;./dev.html#install&quot;)">Documentación</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="c-card item">
+                  <div class="background-bg" style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/prime.png');  background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+                  <div class="content p-4"><small>Coltrane</small>
+                    <h3 class="mt-1">PrimeNG</h3>
+                    <p>Un tema que integra Coltrane en PrimeNG para componentes UI y widgets.</p>
+                    <div class="text-right pt-3">
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.open(&quot;https://github.com/mrtnbrjs/coltrane-prime-theme&quot;)">Ver repositorio</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="mt-4">Paquetes        </h2>
+              <div class="col-md-4 mb-3">
+                <div class="c-card item">
+                  <div class="background-bg" style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/android.gif');  background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+                  <div class="content p-4"><small>Coltrane</small>
+                    <h3 class="mt-1">Android</h3>
+                    <p> Utiliza nuestros recursos para android.</p>
+                    <div class="text-right pt-3">
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.open(&quot;https://drive.google.com/drive/folders/1M8DTMEL2sBdWtxilU3MF3QEpCXfsLmtH&quot;)">Me interesa</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="c-card item">
+                  <div class="background-bg" style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/ios.webp');  background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+                  <div class="content p-4"><small>Coltrane</small>
+                    <h3 class="mt-1">iOS</h3>
+                    <p>Utiliza nuestros recursos para iOS.</p>
+                    <div class="text-right pt-3">
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.open(&quot;https://drive.google.com/drive/folders/1R5sJBSqfwTV0vQ6sqw-2U127AhK-pFUw&quot;)">Me interesa</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="c-card item">
+                  <div class="background-bg" style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/c-windows.png');  background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+                  <div class="content p-4"><small>Coltrane</small>
+                    <h3 class="mt-1">Windows</h3>
+                    <p>Utiliza nuestros recursos para Windows</p>
+                    <div class="text-right pt-3">
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.open(&quot;https://drive.google.com/drive/folders/1w6aNWGF8L71lQ5MbWUZcZMd6dTjbJTqF&quot;)">Me interesa</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="mt-4">Otros recursos</h2>
+              <div class="col-md-4 mb-3">
+                <div class="c-card item">
+                  <div class="background-bg" style="padding:3em;height: 80px;justify-content: center;align-items: center;display: flex; background-image: url('images/snippets.png');  background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+                  <div class="content p-4"><small>Coltrane</small>
+                    <h3 class="mt-1">Snippets (BETA)</h3>
+                    <p>Consulta el documento creado por la unidades de componentes y foundatios, para construir sin necesidad de ninguna librería. </p>
+                    <div class="text-right pt-3">
+                      <button class="secondary-button prmary mt-0 bt-small" type="submit" onclick="window.open(&quot;https://www.figma.com/board/vBE8bY96rcJE8Bj566pTVq/%5BCode%5D-Components-process?node-id=30-532&amp;t=1DtExi6BPZwOmYsG-1&quot;)">Me interesa</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <hr>
+          <hr><br>
+          <div class="c-card mb-4"> 
+            <div id="tokens"></div><br>
+            <h1 class="m-0">Tokens 
+              <div class="caption">Tambien conocidas como "variables de diseño"</div>
+            </h1>
+            <p>Coltrane esta conformado de algunas variables fundamentales, las cuales contruyen todos los componentes, pantallas y elmentos del front, estos son:</p>
+            <div class="caption">También puedes encontrar las variables para otras tecnologías como iOS, Android y Windows <a href="">en este link </a></div>
+            <div class="d-flex">
+              <div class="col-md-12">
+                <pre class="example_code"> <code>:root{
+
+  /* ------------------------------------------------------------------ Tokens V.2   */
+
+    
+  /* ------------------------ Interactive colors */
+  --primary:#006FB9;       
+  --primary-hover:#145B97;  
+  --primary-press:#194B7B; 
+
+  /* ------------------------ Brand colors */
+  --bancoppel:#FFF; 
+  --coppel:#FFDD35;
+  --coppel-max:#753CBD;
+  --afore:#006FB9;
+
+
+  /* ------------------------ Text colors */
+  --text:#1B1A16;
+  --text-soft:#717171;
+  --text-neutral:#BDBDBD;
+
+  /* ------------------------ Border colors */      
+  --border-soft:#717171;
+  --border-neutral:#D9E3F2;
+  
+  /* ------------------------ Background colors */
+  --background:#F1F4FA;
+  --background-soft:#FAFBFC;
+  --background-office:#D9E3F2;
+  --background-box:#FFFFFF;
+
+  /* ------------------------ Semantic colors -- Semantic colors backgrounds*/ 
+  --error:#BA4B44;        --error-bg:#FFF0EF; 
+  --success:#2E8241;       --success-bg:#E5FFEB; 
+  --warning:#AB5C00;       --warning-bg:#FFF4E8; 
+  --info:#0076A9;          --info-bg:#E4F7FF; 
+  --sales:#D3273E;
+    
+  /* ------------------------Fonts */
+  --display:48px;
+  --h1:36px;
+  --h2:28px;
+  --h3:24px;
+  --h4:20px;
+  --body:16px;
+  --small:14px;
+  --caption:12px;
+  
+  /* ----------------------Space Unit */
+  
+  --s-unit:8px;
+  --s-unit-2:16px;
+  --s-unit-3:24px;
+  --s-unit-4:32px;
+  --s-unit-5:40px;
+  
+  /* --------------------Corner radius Unit */
+  
+  --rounded-none: 0px;
+  --rounded-sm: 8px;
+  --rounded-md: 16px;
+  --rounded-full: 999px;
+  
+  // ---------------------Shadow */
+  --shadow-default: 0px 6px 24px 0px rgba(25, 75, 123, 0.04);
+  --shadow-hover: 0px 6px 24px 0px rgba(25, 75, 123, 0.12);
+  --shadow-primary: 0px 6px 24px 0px rgba(25, 75, 123, 0.18);
+  --shadow-floating: 0px 4px 16px rgba(25, 75, 123, 0.24), 0px 6px 24px rgba(25, 75, 123, 0.16);
+
+};</code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="c-card mb-4"> 
+            <h2 id="tipo">Tipografias</h2>
+            <p>Utiliza los tamaños que se adecuen a tu producto.</p>
+            <hr><br><br>
+            <div class="row"> 
+              <h3>Títulos</h3>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <div class="display">Soy un .display</div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;div class=&quot;display&quot;&gt; 
+Soy un .Display 
+&lt;/div&gt; </code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h1>Soy un h1</h1>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h1&gt; 
+Soy un h1 
+&lt;/h1&gt; </code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h2>Soy un h2</h2>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h2&gt; 
+Soy un h2 
+&lt;/h2&gt; </code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h3>Soy un h3</h3>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h3&gt; 
+Soy un h3 
+&lt;/h3&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h4>Soy un h4</h4>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h4&gt; 
+Soy un h4 
+&lt;/h4&gt;</code></pre>
+                </div>
+              </div><br>
+            </div>
+            <h3>Contenido</h3>
+            <div class="row pb-4">
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <p>Soy un p</p>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;p&gt; 
+Soy un p 
+&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> <small>Soy un small</small></div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;small&gt; 
+Soy un small 
+&lt;/small&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> <span class="caption">Soy un caption</span></div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;span class=&quot;caption&quot;&gt; 
+Soy un caption 
+&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <hr>
+          <hr>
+          <hr><br>
+          <div class="c-card mb-4"> 
+            <div id="install"> </div>
+            <div class="c-alert-warning">La versión 3 se enfoca en la singularidad "(c-nombredelaclase)" de los nombres de clases, esto podría causar incompatibilidad con las versiones anteriores. Si tienes alguna duda contácta al equipo Coltrane. </div>
+            <h1>Instalación Coltrane CSS</h1>
+            <p>Para la instalación de esta librería puedes utilizar la etiqueta link dento de <span class="bold">head</span> para utilizarlo en tu HTML</p>
+            <pre class="example_code">  <code>&lt;link type=&quot;text/css&quot; href=&quot;coltrane.min.css&quot;&gt;</code></pre>
+            <div class="text-center caption">
+              <button class="primary-button m-3" type="submit" onclick="window.open('files/Coltrane.css v.3.0.zip')">Descargar v.3</button>
+              <button class="secondary-button m-3" type="submit" onclick="window.open(&quot;https://github.com/coltrane-dls/coltrane&quot;)">Ver repositorio</button><br>
+              <caption>Otras versiones: <br><a class="c-link" href onclick="window.open('./files/Coltrane.css v.2.0.0.zip')">2.0</a>,<a class="c-link" href onclick="window.open('./files/Coltrane.css v.1.7.0.zip')">1.7</a>,<a class="c-link" href onclick="window.open('./files/Coltrane.css v.1.6.0.zip')">1.6</a>,<a class="c-link" href onclick="window.open('./files/Coltrane.css v.1.5.0.zip')">1.5</a>, <a class="c-link" href onclick="window.open('./files/Coltrane.css v.1.4.0.zip')">1.4</a> ,<a class="c-link" href onclick="window.open('./files/Coltrane.css v.1.3.0.zip')">1.3</a>    </caption>
+            </div>
+          </div>
+          <div class="c-card">
+            <h1>Componentes</h1><br>
+            <div class="types">
+              <h2 id="button">📦 Button</h2><small>Arquetipo: Botón ·  Objetivo: Interacción</small><br>
+              <div class="mt-2 c-alert-warning"><small>⚠️ La etiqueta &lt; button&gt; como la clase .c-button funcionan para construir el botón. </small></div>
+              <h3 id="btn">⏺ Primary</h3>
+              <div class="example top p-4">
+                <button class="primary-button m-4" type="button" name="button">
+                  Default Primary Button
+                  
+                </button><br>
+                <button class="primary-button large m-4" type="button" name="button">
+                  ".large" Primary Button
+                  
+                </button><br>
+                <button class="primary-button m-4 responsive" type="button" name="button">
+                  ".responsive" - Primary Button
+                  
+                  
+                </button>
+              </div>
+              <pre class="example_code bottom m-0"><code>&lt;button class=&quot;primary-button m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+Default Primary Button         
+&lt;/button&gt;
+
+&lt;button class=&quot;primary-button large m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+&quot;.large&quot; Primary Button
+&lt;/button&gt;
+
+&lt;button class=&quot;primary-button m-4 responsive&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+ &quot;.responsive&quot; - Primary Button
+&lt;/button&gt;
+</code></pre>
+              <h3 id="btn">⏺ Secondary</h3>
+              <div class="example top">
+                <button class="secondary-button m-4" type="button" name="button">
+                  Secondary Button
+                  
+                </button>
+                <button class="icon-button m-4" type="button" name="button"><img src="assets/icon.svg"></button>
+              </div>
+              <pre class="example_code bottom m-0"><code>&lt;button class=&quot;secondary-button m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+Secondary Button
+&lt;/button&gt;
+
+&lt;button class=&quot;icon-button m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;&lt;img src=&quot;assets/icon.svg&quot;&gt;&lt;/button&gt;</code></pre>
+              <h3 id="btn">⏺ Link</h3>
+              <div class="example top p-4"><a class="c-link" href>Link</a></div>
+              <pre class="example_code bottom bottom m-0"><code>&lt;a class=&quot;c-link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;</code></pre>
+            </div><br><br>
+            <div id="alert"> </div><br>
+            <hr><br>
+            <div class="types">
+              <h2>📦 Alert</h2>
+              <h3>⏺ Success</h3>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-alert-success"><img src="assets/mensaje.svg"><small>Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.</small>
+                  <!--  <a href="#modal"><img src="assets/cross.svg"></a>-->
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+              <pre class="example_code m-0"><code>&lt;div class=&quot;c-alert-success&quot;&gt;
+  &lt;img src=&quot;assets/mensaje.svg&quot;&gt;
+  &lt;small&gt;Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.&lt;/small&gt;
+  &lt;!--  &lt;a href=&quot;#modal&quot;&gt;&lt;img src=&quot;assets/cross.svg&quot;&gt;&lt;/a&gt; --&gt;
+&lt;/div&gt;</code></pre>
+              <h3>⏺ Error</h3>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-alert-error"><img src="assets/mensaje.svg"><small>Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.</small>
+                  <!--  <a href="#modal"><img src="assets/cross.svg"></a>-->
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+              <pre class="example_code m-0"><code>&lt;div class=&quot;c-alert-error&quot;&gt;
+  &lt;img src=&quot;assets/mensaje.svg&quot;&gt;
+  &lt;small&gt;Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.&lt;/small&gt;
+  &lt;!--  &lt;a href=&quot;#modal&quot;&gt;&lt;img src=&quot;assets/cross.svg&quot;&gt;&lt;/a&gt; --&gt;
+&lt;/div&gt;</code></pre>
+              <h3>⏺ Warning</h3>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-alert-warning"><img src="assets/mensaje.svg"><small>Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.</small>
+                  <!--  <a href="#modal"><img src="assets/cross.svg"></a>-->
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+              <pre class="example_code m-0"><code>&lt;div class=&quot;c-alert-warning&quot;&gt;
+  &lt;img src=&quot;assets/mensaje.svg&quot;&gt;
+  &lt;small&gt;Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.&lt;/small&gt;
+  &lt;!--  &lt;a href=&quot;#modal&quot;&gt;&lt;img src=&quot;assets/cross.svg&quot;&gt;&lt;/a&gt; --&gt;
+&lt;/div&gt;</code></pre>
+              <h3>⏺ Info </h3>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-alert-info"><img src="assets/mensaje.svg"><small>Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.</small>
+                  <!--  <a href="#modal"><img src="assets/cross.svg"></a>-->
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+              <pre class="example_code m-0"><code>&lt;div class=&quot;.c-alert-info&quot;&gt;
+  &lt;img src=&quot;assets/mensaje.svg&quot;&gt;
+  &lt;small&gt;Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.&lt;/small&gt;
+  &lt;!--  &lt;a href=&quot;#modal&quot;&gt;&lt;img src=&quot;assets/cross.svg&quot;&gt;&lt;/a&gt; --&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="prueba"></div>
+            <div id="avatar"><br><br>
+              <hr><br>
+              <h2>📦 Avatar</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== AVATARES-->
+                <div class="c-avatar avatar-s">
+                  <div class="avatar-name">S</div>
+                </div>
+                <div class="c-avatar avatar-m">
+                  <div class="avatar-name">M</div>
+                </div>
+                <div class="c-avatar avatar-l">
+                  <div class="avatar-name">L</div>
+                </div>
+                <div class="c-avatar avatar-l" style="background:url('assets/prom.png');background-size:cover;color:transparent;">.</div>
+                <!--  ==================================================================================== AVATARES-->
+              </div>
+              <pre class="example_code m-0"><code>&lt;div class=&quot;c-avatar avatar-s&quot;&gt;
+&lt;div class=&quot;avatar-name&quot;&gt;S&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;c-avatar avatar-m&quot;&gt;
+&lt;div class=&quot;avatar-name&quot;&gt;M&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;c-avatar avatar-l&quot;&gt;
+&lt;div class=&quot;avatar-name&quot;&gt;L&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;c-avatar avatar-l&quot; style=&quot;background:url('assets/prom.png');background-size:cover;color:transparent;&quot;&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div id="breadcrumb"><br><br>
+              <hr><br>
+              <h2>📦 Breadcrumb</h2>
+              <div class="example p-5">
+                <!--  ==================================================================================== MODALBOX-->
+                <ul class="c-breadcrumb">
+                  <li><a href="#">Opción 1</a></li>
+                  <li><a href="#">Opción 2</a></li>
+                  <li><a href="#">Opción 3</a></li>
+                </ul>
+                <!--  ==================================================================================== MODALBOX-->
+              </div>
+              <pre class="example_code m-0"><code>&lt;ul class=&quot;c-breadcrumb&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            <div id="card"><br><br>
+              <hr><br>
+            </div>
+            <div class="types">
+              <h2>📦 Card</h2>
+              <p>Para utilizar la estructura de card, bastara con ocupar <span class="bold">.card</span> junto con un div y así tener disponible este tipo de componente</p>
+              <div class="example p-4">
+                <div class="c-card">
+                  <p>Soy un card</p>
+                </div>
+              </div>
+              <h3>⏺ Card item</h3>
+              <div class="example p-4">
+                <!--  ==================================================================================== card item-->
+                <div class="c-card item">
+                  <div class="img-content neutral-bg"><img src="https://cdn1.coppel.com/images/catalog/pm/6309933-1.jpg" alt></div>
+                  <div class="content m-3">
+                    <h4>Título</h4>
+                    <p>Contenido</p><a href="#">Link </a>
+                  </div>
+                </div>
+                <!--  ==================================================================================== card item-->
+              </div>
+            </div>
+            <div id="collapse"><br><br>
+              <hr><br>
+              <h2>📦 Collapse</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-collapse-group">
+                  <details class="c-collapse">
+                    <summary>
+                      <h3>Dudas fiancieras</h3><img src="assets/chevron_down.svg" alt>
+                    </summary>
+                    <div class="c-c-content">
+                      <h4>Title</h4>
+                      <p>This is some text and <i>these words are italic</i></p>
+                    </div>
+                  </details>
+                  <details class="c-collapse">
+                    <summary>
+                      <h3>Créditos</h3><img src="assets/chevron_down.svg" alt>
+                    </summary>
+                    <div class="c-c-content">
+                      <h4>Title</h4>
+                      <p>This is some text and <i>these words are italic</i></p>
+                    </div>
+                  </details>
+                  <details class="c-collapse">
+                    <summary>
+                      <h3>Click to expand</h3><img src="assets/chevron_down.svg" alt>
+                    </summary>
+                    <div class="c-c-content">
+                      <h4>Title</h4>
+                      <p>This is some text and <i>these words are italic</i></p>
+                    </div>
+                  </details>
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+            </div>
+            <div id="footer"><br><br>
+              <hr><br>
+              <h2>📦 Footer</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== PROGRES BAR-->
+                <div class="c-footer white-bg">
+                  <div class="text-center pb-4"><a href="#">Ir arriba</a></div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h4>Menú</h4>
+                        <ul>
+                          <li>Inicio</li>
+                          <li>Developers Coppel</li>
+                          <li>Customer Experience</li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6">
+                        <h2>👋</h2><br>Visualiza el footer completo <a href="#footer-site">al final de esta página.</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  ==================================================================================== PROGRES BAR-->
+              </div>
+            </div>
+            <div id="c-header"><br><br>
+              <hr><br>
+              <h2>📦 Header</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== PROGRES BAR-->
+                <div class="c-header-background background-bg b-center hv-25" style="background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/07/mountain-wallpaper-01.jpg');"></div>
+                <pre class="example_code m-0"><code>&lt;div class=&quot;c-header-background background-bg b-center hv-25&quot; style=&quot;background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/07/mountain-wallpaper-01.jpg');&quot;&gt;
+&lt;/div&gt; 
+</code></pre>
+                <!--  Some utilities -->
+                <!--  Height: .vh-25, .vh-50, .vh-75, .vh-100 -->
+                <!--  Position&repeat: .no-repeat-img, .img-cover -->
+                <!--  ==================================================================================== PROGRES BAR-->
+                <h2>Header with content</h2>
+                <div class="c-header-background background-bg b-center hv-50 no-repeat-img img-cover" style="background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/07/mountain-wallpaper-01.jpg');">
+                  <div class="container-sm h-100">
+                    <div class="row h-100 justify-content-center align-items-center">
+                      <div class="col-sm-6">
+                        <h3 class="primary">Secciones</h3>
+                        <p class="white">Hola soy un contenido</p>
+                      </div>
+                      <div class="col-sm-6">
+                        <h3 class="primary">Secciones</h3>
+                        <p class="white">Hola soy un contenido</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="example_code m-0"><code>&lt;div class=&quot;c-header-background background-bg b-center hv-50 no-repeat-img img-cover&quot; style=&quot;background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/07/mountain-wallpaper-01.jpg');&quot;&gt;
+  &lt;div class=&quot;container-sm h-100&quot;&gt;
+    &lt;div class=&quot;row h-100 justify-content-center align-items-center&quot;&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;h3 class=&quot;primary&quot;&gt;Secciones&lt;/h3&gt;
+        &lt;p class=&quot;white&quot;&gt;Hola soy un contenido&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;h3 class=&quot;primary&quot;&gt;Secciones&lt;/h3&gt;
+        &lt;p class=&quot;white&quot;&gt;Hola soy un contenido&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div id="inputs"><br><br>
+              <hr><br>
+              <div class="types">
+                <h2>📦 Input</h2>
+                <div class="example p-4">
+                  <!--  ==================================================================================== INPUTS-->
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(🥑 Regular input)</span></label>
+                    <input type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small" for>Un mensaje al usuario 🙃</label>
+                  </form><br>
+                  <hr><br>
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(🔥 Error input)</span></label>
+                    <input class="error-border" type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small error" for>Un mensaje al usuario 🙃</label>
+                  </form><br>
+                  <hr><br>
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(✅ Success input)</span></label>
+                    <input class="success-border" type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small success" for>Un mensaje al usuario 🙃</label>
+                  </form><br>
+                  <hr><br>
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label class="neutral" for>Nombre <span class="small neutral">(✅ Disabled input)</span></label>
+                    <input type="text" name placeholder="María Gonzalez ejm." disabled>
+                    <label class="small neutral" for>Un mensaje al usuario 🙃</label>
+                  </form><br>
+                  <hr><br>
+                  <form class="form-coppel" action="index.html" method="post" disabled>
+                    <label for>Nombre <span class="small neutral">(📦 Dropdown input)</span></label>
+                    <div class="select">
+                      <input type="radio" name="option"><i class="toggle icon icon-arrow-down"></i><i class="toggle icon icon-arrow-up"></i><span class="placeholder">Selecciona una opción</span>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Speedometer</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Fire</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option" disabled><span class="title animated fadeIn">Handbag</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Badge</span>
+                      </label>
+                    </div>
+                    <label class="small neutral" for>Un mensaje al usuario 🙃</label>
+                  </form><br>
+                  <hr><br>
+                  <form class="form-coppel" action="index.html" method="post" disabled>
+                    <label for>Nombre <span class="small neutral">(📦 🔥Dropdown input DISABLED)</span></label>
+                    <div class="select">
+                      <input type="radio" name="option" disabled>
+                      <!--
+                      <i class="toggle icon icon-arrow-down"></i>
+                                                              <i class="toggle icon icon-arrow-up"></i> 
+                      --><span class="placeholder">Selecciona una opción</span>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Speedometer</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Fire</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option" disabled><span class="title animated fadeIn">Handbag</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Badge</span>
+                      </label>
+                    </div>
+                    <label class="small neutral" for>Un mensaje al usuario 🙃</label>
+                  </form><br>
+                  <hr><br>
+                  <form class="form-coppel" action>
+                    <label for>Fecha <span class="small neutral">(📦 🔥 Date input)</span></label>
+                    <input type="date" name="fecha">
+                    <label class="small neutral" for>Un mensaje al usuario 🙃</label>
+                  </form>
+                  <!--  ==================================================================================== INPUTS-->
+                </div>
+                <h3>⏺ Tamaños de input</h3>
+                <div class="example p-4">
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(🥑 Small input)</span></label>
+                    <input class="c-small" type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small" for>Un mensaje al usuario 🙃</label>
+                  </form><br><br>
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(🥑 Medium /Regular input)</span></label>
+                    <input class="c-medium" type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small" for>Un mensaje al usuario 🙃</label>
+                  </form><br><br>
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(🥑 Large input)</span></label>
+                    <input class="c-large" type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small" for>Un mensaje al usuario 🙃</label>
+                  </form><br><br>
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(🥑 XLarge input)</span></label>
+                    <input class="c-xlarge" type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small" for>Un mensaje al usuario 🙃</label>
+                  </form>
+                </div>
+                <h3>⏺ Uploader</h3>
+                <div class="example p-4">
+                  <!--  ==================================================================================== UPLOADER-->
+                  <form class="form-coppel loader" action>
+                    <label class="file" for="avatar">Choose..</label>
+                    <input id="avatar" type="file" name="avatar" accept="image/png, image/jpeg">
+                    <input type="text" name placeholder="File.png">
+                  </form>
+                  <!--  ==================================================================================== UPLOADER-->
+                </div>
+              </div>
+              <h2 id="selector">📦 Selector</h2>
+              <div class="caption">También llamado checkbox</div><br>
+              <div class="example p-5">
+                <!--  ==================================================================================== CHECKBOX-->
+                <input type="checkbox" name>
+                <label class="p-2" for>Checkbox</label>
+                <!--  ==================================================================================== CHECKBOX-->
+              </div>
+              <h2 id="upload">📦 Upload</h2>
+              <div class="example p-5">
+                <!--  ==================================================================================== CHECKBOX-->
+                <div class="form-coppel">
+                  <label class="c-upload" for="images">
+                    <h3 class="c-upload-title">Drop files here</h3>o
+                    <button class="primary-button m-3 no-click" type="submit">Subir archivo</button>
+                    <input id="images" type="file" accept="image/*" required>
+                  </label>
+                </div>
+                <!--  ==================================================================================== CHECKBOX-->
+              </div>
+            </div>
+            <div id="list"><br><br>
+              <hr><br>
+              <h2>📦 List</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-list">
+                  <div class="c-list-item"><span>
+                      🏅 Febrero✅</span></div>
+                  <div class="c-list-item"><span>
+                      🏅 Marzo✅</span></div>
+                  <div class="c-list-item"><span>
+                      🏅 Abril✅</span></div>
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+            </div>
+            <div id="modal"><br><br>
+              <hr><br>
+              <h2>📦 Modal</h2>
+              <div class="example p-5">
+                <!--  ==================================================================================== MODALBOX-->
+                <div class="c-modalbox"><a href="#modal"><img src="assets/cross.svg"></a>
+                  <h1>Título</h1>
+                  <p>La app que seleccionaste ya no se mostrará en tu pantalla de inicio.</p>
+                  <p>Si deseas verla de nuevo en el inicio ve a la sección deMis Aplicación y márcala como destacada.</p>
+                  <button class="primary-button mb-3" type="button" name="button">De acuerdo, quitar</button>
+                  <button class="secondary-button" type="button" name="button">Cancelar</button>
+                </div>
+                <!--  ==================================================================================== MODALBOX-->
+              </div>
+            </div>
+            <div id="navbar"><br><br>
+              <hr><br>
+              <h2>📦 Navbar</h2>
+              <!--   NAVBAR ************************************-->
+              <div class="example p-5">
+                <!--  ==================================================================================== CODE-->
+                <nav class="c-navbar">
+                  <div class="brand">
+                    <h4>coppel-design.com</h4>
+                  </div>
+                  <ul class="menu">
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">Navbar</a></li>
+                    <li><a href="#">Components</a></li>
+                  </ul>
+                </nav>
+                <!--  ==================================================================================== CODE-->
+              </div>
+              <!--   NAVBAR ************************************-->
+            </div>
+            <div id="progress"><br><br>
+              <hr><br>
+              <h2>📦 ProgressBar</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== PROGRES BAR-->
+                <div class="c-progressBar">
+                  <div class="groupBar">
+                    <div class="bar"></div>
+                    <div class="progress" style="width:80%"></div>
+                  </div>
+                </div>
+                <!--  ==================================================================================== PROGRES BAR--><br>
+                <hr><br>
+                <!--  ==================================================================================== PROGESS BAR PERCENT-->
+                <div class="c-progressBar barPercent">
+                  <div class="groupBar">
+                    <div class="bar"></div>
+                    <div class="progress" style="width:50%"></div>
+                  </div>
+                  <label class="small text-center" for>60%</label>
+                </div>
+                <!--  ==================================================================================== PROGESS BAR PERCENT-->
+              </div>
+            </div>
+            <div id="range"><br><br>
+              <hr><br>
+              <h2>📦 Range</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-range">
+                  <input class="slider" id="myRange" type="range" min="1" max="100" value="50">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <label class="small">Mónto mínimo $1,000</label>
+                  <label class="small">Mónto máximo $5,000</label>
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+            </div>
+            <div id="stepper"><br><br>
+              <hr><br>
+              <h2>📦 Stepper</h2>
+              <div class="example p-5">
+                <!--  ==================================================================================== STEPER-->
+                <div class="c-stepper">
+                  <div class="stepper-group">
+                    <div class="stepper-step primary-bg">
+                      <div class="checked-step"></div>
+                    </div>
+                    <div class="stepper-text">
+                      <label for>Título</label>
+                      <label class="small">Subtitle</label>
+                    </div>
+                    <div class="stepper-line"></div>
+                  </div>
+                  <div class="stepper-group">
+                    <div class="stepper-step neutral-bg pencil">1</div>
+                    <div class="stepper-text">
+                      <label for>Título</label>
+                      <label class="small">Subtitle</label>
+                    </div>
+                    <div class="stepper-line"></div>
+                  </div>
+                  <div class="stepper-group">
+                    <div class="stepper-step neutral-bg pencil">2</div>
+                    <div class="stepper-text">
+                      <label for>Título</label>
+                    </div>
+                  </div>
+                </div>
+                <!--  ==================================================================================== STEPER-->
+              </div>
+            </div>
+            <div id="table"><br><br>
+              <hr><br>
+              <h2>📦 Table</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <table class="c-table full zebra-striped" cellspacing="0" cellpadding="0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Language</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Some</td>
+                      <td>One</td>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Joe</td>
+                      <td>Sixpack</td>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Stu</td>
+                      <td>Dent</td>
+                      <td>Code</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+            </div>
+            <div id="tabs"><br><br>
+              <hr><br>
+              <h2>📦 Tabs</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== ALERT-->
+                <ul class="c-tabs">
+                  <li>Opción 1</li>
+                  <li>Opción 2</li>
+                  <li>Opción 3</li>
+                  <li>Opción 4</li>
+                </ul>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+            </div>
+            <div id="tooltip"> <br><br>
+              <hr><br>
+              <h2>📦 Tooltip</h2>
+              <div class="example p-4">
+                <!--  ==================================================================================== TOOLTIP-->
+                <div class="tooltip">
+                  <label>Holi 👋 Soy un tooltip, HOVER me !</label>
+                  <div class="tooltip-container box-shadow">
+                    <h4>Título</h4>
+                    <div class="tooltip-content">
+                      Muestran información concisa para guiar al usuario en alguna experiencia.
+                      
+                    </div>
+                  </div>
+                </div>
+                <!--  ==================================================================================== TOOLTIP-->
+              </div>
+            </div><br><br>
+            <hr>
+            <hr><br>
+            <div class="types">
+              <h2>🏀 Sistemas adicionales </h2>
+              <h3 id="column">🧱 Columnas</h3>
+              <p></p>Integrado a este paquete encontraras el sistema de columnas de bootstrap sientete libre de incluirlo o quitarlo del coppelize.css según tus necesidades. Si es que decides dejarlo, puedes utilizar col-md, col-lg, container y todo el poder del grid de este framework. Para leer más sobre su uso puedes <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">visitar su documentación</a><br>
+              <h3 id="utils">🎒 Utilidades</h3>
+              <p></p>Integrado a este paquete encontraras el sistema de utilidades y modificadores tales como p-1, m-1,<a href="https://getbootstrap.com/docs/4.0/utilities/borders/" target="_blank">visitar su documentación</a><br><br>
+              <hr>
+              <hr>
+              <hr><small></small><br>Si tienes alguna duda o sugerencia nos puedes contactar a<a href="mailto:raul.gonzalezg@coppel.com">raul.gonzalezg@coppel.com</a> para mayor support.<br><br>🏀 by Coppel Design Standards - Grupo Coppel ®<br><br><small></small><i>Esta librería antes se llamo Coppelize.css pero ahora es Coltrane.css</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="c-footer white-bg" id="footer-site">
+    <div class="text-center pb-4"><a href="#">Ir arriba 👆🏽</a></div>
+    <div class="container">
+      <div class="row p-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2">
+          <h4>Menú</h4>
+          <ul>
+            <li> <a class="simple" href="#"> Inicio</a></li>
+            <li> <a class="simple" href="https://sites.google.com/coppel.com/developers?pli=1&amp;authuser=1"> Developers Coppel</a></li>
+            <li> <a class="simple" href="https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio"> Customer Experience</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2">
+          <h4>Sitios relacionados</h4>
+          <ul>
+            <li> <a class="simple" href="https://www.figma.com/files/1047193570379035198/team/1093981884637337922"> Coltrane.Figma</a></li>
+            <li> <a class="simple" href="https://coltrane.design/"> Coltrane.CSS</a></li>
+            <li> <a class="simple" href="https://www.figma.com/files/1047193570379035198/project/63206897"> Coltrane.Ilustraciones</a></li>
+            <li> <a class="simple" href="https://sites.google.com/coppel.com/manualdecomunicacinorgnicomag/inicio" target="blank">Customer Experience</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2">
+          <h4>Contáctanos</h4>
+          <ul>
+            <li> <a class="simple" href="mailto:raul.gonzalezg@coppel.com"> raul.gonzalezg@coppel.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+    <div class="caption text-center p-4"><a class="simple" href="#">Aviso de privacidad</a><br>Copyright© 2023 Coppel - Todos los derechos reservados.</div><br><br><br><br><br>
+    <!--  Google tag (gtag.js) -->
+    <!--  Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S060M0NFTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+      
+            gtag('config', 'G-S060M0NFTJ');
+    </script>
+  </footer>
+</html>

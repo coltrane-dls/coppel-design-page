@@ -11,10 +11,19 @@ body{
 
 .brand a{
     color:var(--black) !important;
+    display: flex;
+    align-items: center;
 }
 .brand a:hover{
     text-decoration: none;
 }
+
+.brand a img{
+  height: 27px;
+  margin-right: 8px;
+}
+
+
 
 a{
     letter-spacing: .9px;
@@ -134,6 +143,14 @@ h1,h2{
     bottom: 0;
   }
 
+  .fix_alert{
+    pointer-events: none;
+  }
+
+  .c-footer{
+    position: sticky;
+    z-index: 100;
+  }
   /* ====================================== Custom head */
 
   .c-navbar .secondary-button, .c-navbar .primary-button{
@@ -151,3 +168,132 @@ h1,h2{
     padding-left: 4px;
     padding-right: 4px;
   }
+
+
+
+
+  /* ====================================== MINI MENU */
+.mini-menu-fix{
+    display: flex;
+    justify-content: center;
+}
+.mini-menu{
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.mini-menu{
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+}
+
+.mini-menu > *{
+  padding-top: 8px;
+}
+
+.menu > a{
+  font-family: Helvetica Neue;
+  display: block;
+}
+
+.menu{
+  border-radius: 8px;
+  
+  max-height: calc(100vh - 232px);
+  overflow: scroll;
+}
+
+.mini-content{
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+/* ====================================== Utilities */
+
+.r-1{
+  border-radius: 8px;
+}
+
+
+.r-2{
+  border-radius: 16px;
+}
+
+.padding-initial{
+  padding: initial !important;
+}
+
+.primary-button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* ====================================== ONLY FOR DEMO */
+
+.types {
+	border-left: 2px solid #dedcdc;
+	padding-left: 16px;
+
+	& h3 {
+		margin-left: -24px;
+		z-index: 2;
+	}
+	& h2 {
+		margin-left: -32px;
+		z-index: 2;
+	}
+}
+
+.example {
+	background-color: var(--background);
+	overflow-x: scroll;
+	border-radius: 8px;
+}
+.example.top {
+	border-radius: 8px 8px 0 0;
+}
+.example_code {
+	background-color: #333337;
+	color: var(--coppel);
+	border-radius: var(--rounded-sm);
+	padding: 16px;
+	font-weight: 100;
+	overflow: scroll;
+}
+.example_code.bottom {
+	border-radius: 0 0 8px 8px;
+}
+.custom_side {
+	position: fixed;
+	width: 20%;
+	max-width: 320px;
+	min-width: 270px;
+}
+
+@media (max-width: 1200px) {
+	.custom_side {
+		min-width: 200px;
+	}
+	.custom_side .c-card {
+		min-width: 200px;
+		padding: 8px !important;
+	}
+}
+
+@media (max-width: 992px) {
+	.custom_side {
+		position: relative;
+		display: contents;
+	}
+}
